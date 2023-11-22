@@ -2,7 +2,7 @@ package chapter1
 
 // 데이터 클래스
 data class Person(val name: String,
-                  val age: Int? = null)  // Int? < nullable default null
+                  val age: Int? = null)  // Int? < nullable default nullㄴ
 
 // 최상위 main
 fun main(args: Array<String>) {
