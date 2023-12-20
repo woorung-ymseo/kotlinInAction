@@ -1,5 +1,7 @@
 package chapter1
 
+import chapter5.Chapter5
+
 // 데이터 클래스
 data class Person(val name: String,
                   val age: Int? = null)  // Int? < nullable default nullㄴ
@@ -18,4 +20,7 @@ fun main(args: Array<String>) {
     val youngest = persons.minByOrNull { it.age ?: 0 } // 책에는 maxBy 였으나 deprecated 여서 maxByOrNull 로 사용 -> 1.7부터는 다시 생긴듯?
     println("나이가 가장 적은 사람 : $youngest")
     println("나이가 가장 많은 사람 : $oldest")
+
+
+    Chapter5().flatTest();
 }
